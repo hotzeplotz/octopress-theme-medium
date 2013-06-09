@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	background: #33332D;
+	background: transparent;
 	font-family: "Roboto Slab", "Open Sans", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #33332D;
 	height: 100%;
@@ -52,7 +52,7 @@ body {
 				display: block;
 				a {
 					padding: 0px 0px;
-          color: #FFF8E3;
+          color: #333;
 				}
 			}
 		}
@@ -79,7 +79,7 @@ body {
   	right: 0;
   	min-height: 100%;
 		width: 72%;
-		background: #FFF8E3;
+		background: transparent;
 		#banner {
 			width: 100%;
 			small {
@@ -213,7 +213,7 @@ body {
 	.left-col {
 		width: 28%;
 		position: fixed;
-		opacity: .3;
+		// opacity: .3;
 		-webkit-transition: all .2s ease-in;
 		-moz-transition: all .2s ease-in;
 		-o-transition: all .2s ease-in;
@@ -241,7 +241,7 @@ body {
           margin-top: 20px;
           margin-bottom: 10px;
           a {
-            color: #FFF8E3;
+            color: #333;
           }
         }
         .site-subtitle {
@@ -261,8 +261,8 @@ body {
 			  }
       }
 			a {
-				color: #EFEFEF;
-				text-shadow: 0 1px #333;
+				color: #f80;
+				// text-shadow: 0 1px #333;
 			}
 			a:hover {
 				color: $highlight;
@@ -345,7 +345,7 @@ body {
             margin-top: 20px;
             margin-bottom: 10px;
             a {
-              color: #FFF8E3;
+              color: #333;
             }
           }
           .site-subtitle {
