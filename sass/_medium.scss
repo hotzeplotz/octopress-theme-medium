@@ -6,7 +6,7 @@ html {
 
 body {
 	background: transparent;
-	font-family: "Roboto Slab", "Open Sans", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: $font-default;
   color: #33332D;
 	height: 100%;
 }
@@ -44,6 +44,9 @@ body {
 	#main-nav {
 		float: none;
 		margin-left: 0px;
+    font-family: $font-navigation;
+    font-weight: $font-navigation-weight;
+    text-transform: uppercase;
 
 		ul {
 			li {
@@ -111,6 +114,8 @@ body {
           }
         }
 				article {
+          font-size: 1.2em;
+          font-family: $font-article;
 					border-top: none;
 					.title {
 						margin-left: 0px;
@@ -169,10 +174,15 @@ body {
               font-size: 0.9em;
 						}
             .tags {
+              font-family: $font-default;
               font-size: 15px;
             }
 					}
 					h1.title{
+            font-family: $font-headings-family;
+            font-weight: $font-headings-weight;
+            text-transform: uppercase;
+            
 						a {
 							color: #333;
 							-webkit-transition: color 0.3s;
@@ -191,8 +201,10 @@ body {
 					h1.archive-title{
             @extend h1.title;
             margin: 0;
-            font-size: 22px;
-            font-weight: 100;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            font-weight: 900;
+            
 						a {
 							color: #33332d;
 						}
@@ -237,6 +249,9 @@ body {
         left: 10%;
         right: 10%;
         .site-title {
+          font-family: $font-headings-family;
+          font-weight: $font-headings-weight;
+          
           text-align: center;
           margin-top: 20px;
           margin-bottom: 10px;
@@ -245,11 +260,12 @@ body {
           }
         }
         .site-subtitle {
+          font-family: $font-headings-family;
+          font-weight: $site-subtitle-font-weight;
           text-align: center;
           line-height: 1.4em;
           width: 80%;
           padding-left: 10%;
-          color: #CCCC9f;
         }
 			  .profilepic {
           text-align: center;
@@ -327,7 +343,7 @@ body {
 				#sub-nav{
 					display: block;
 				}
-				#main-nav {
+				#main-nav {          
 						ul {
 							display: none;
 							li {
