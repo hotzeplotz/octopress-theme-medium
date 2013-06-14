@@ -4,9 +4,11 @@
 <body>
 	<div class="container">
 		<div class="left-col">
+      <div class="background"></div>
 			<div class="intrude-less">
 			<header id="header" class="inner">{% include header.html %}</header>
 			</div>
+      {% include title.html %}
 		</div>
 		<div class="mid-col">
 			{% unless page.banner == false %}
